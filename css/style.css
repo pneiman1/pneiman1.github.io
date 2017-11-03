@@ -438,8 +438,23 @@ body {
   float: right;
   margin-right: -15px;
 }
-#nav-rss-link:before {
-  content: "\f09e";
+#nav-twitter-link:before {
+  content: "\f099";
+}
+#nav-instagram-link:before {
+  content: "\f16d";
+}
+#nav-facebook-link:before {
+  content: "\f09a";
+}
+#nav-linkedin-link:before {
+  content: "\f0e1";
+}
+#nav-googleplus-link:before {
+  content: "\f0d5";
+}
+#nav-github-link:before {
+  content: "\f113";
 }
 #nav-search-btn:before {
   content: "\f002";
@@ -1301,7 +1316,7 @@ pre .javascript .function {
 .widget {
   color: #777;
   text-shadow: 0 1px #fff;
-  background: #ddd;
+  background: #fff;
   -webkit-box-shadow: 0 -1px 4px #ccc inset;
   box-shadow: 0 -1px 4px #ccc inset;
   border: 1px solid #ccc;
