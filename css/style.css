@@ -525,6 +525,9 @@ body {
 .article-inner {
   overflow: hidden;
 }
+.article-meta {
+  margin-top: -30px;
+}
 .article-meta:before,
 .article-meta:after {
   content: "";
