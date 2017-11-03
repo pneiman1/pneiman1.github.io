@@ -525,9 +525,6 @@ body {
 .article-inner {
   overflow: hidden;
 }
-.article-meta {
-  margin-top: -30px;
-}
 .article-meta:before,
 .article-meta:after {
   content: "";
@@ -551,7 +548,7 @@ body {
   content: "\2022";
 }
 .article-category-link {
-  margin: 0 12px 1em;
+  margin: 1em 12px 1em;
   color: #3d0b00;
 }
 .article-header {
