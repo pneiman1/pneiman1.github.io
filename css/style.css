@@ -1346,6 +1346,7 @@ pre .javascript .function {
 }
 .widget {
   line-height: 1.6em;
+  background-color: #fff;
   word-wrap: break-word;
   font-size: 0.9em;
 }
