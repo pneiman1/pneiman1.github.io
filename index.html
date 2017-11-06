@@ -91,7 +91,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h6 id="author-Phil-Neiman"><a href="#author-Phil-Neiman" class="headerlink" title="author: Phil Neiman"></a>author: <em>Phil Neiman</em></h6><p>Hi folks! In my last blog post, we covered installing the Hexo blog engine via Command Line Interface (CLI), running the Hexo server, creating a new blog post, and generating the static files needed to deploy your blog to production.</p>
+        <p>Hi folks! In my last blog post, we covered installing the Hexo blog engine via Command Line Interface (CLI), running the Hexo server, creating a new blog post, and generating the static files needed to deploy your blog to production.</p>
 <p>Today, we’re picking up right where we left off, and we’re going to deploy our Hexo blog to <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>, the publishing arm of the <a href="http://github.com/" target="_blank" rel="external">GitHub platform</a>. </p>
 <h3 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi _config.yml</div></pre></td></tr></table></figure>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="string">~~~~~~~~~~~~~~~~~~</span> <span class="string">_config.yml</span> <span class="string">~~~~~~~~~~~~~~~~~~</span></div><div class="line"><span class="comment"># Site</span></div><div class="line"><span class="attr">title:</span> <span class="string">MyBlog</span></div><div class="line"><span class="attr">subtitle:</span></div><div class="line"><span class="attr">description:</span> <span class="string">This</span> <span class="string">is</span> <span class="string">my</span> <span class="string">blog</span></div><div class="line"><span class="attr">author:</span> <span class="string">Me</span></div><div class="line"><span class="attr">language:</span></div><div class="line"><span class="attr">timezone:</span> <span class="string">Japan</span></div><div class="line"></div><div class="line"><span class="comment"># URL</span></div><div class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></div><div class="line"><span class="attr">url:</span> <span class="attr">http://gitusername.github.io/</span></div><div class="line"><span class="attr">root:</span> <span class="string">/</span></div><div class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></div><div class="line"><span class="attr">permalink_defaults:</span></div></pre></td></tr></table></figure>
@@ -107,11 +107,12 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>After writting the above command, you should be able to see your new blog on GitHub Pages.<br><a href="http://******.github.io/" target="_blank" rel="external">http://******.github.io/</a></p>
 <p>Follow then DM me on <a href="https:twitter.com/pneiman1" target="_blank" rel="external">Twitter</a> if you have questions!</p>
+<h6 id="By-Phil-Neiman"><a href="#By-Phil-Neiman" class="headerlink" title="By: Phil Neiman"></a><span style="color:black;">By: <em>Phil Neiman</em></span></h6><p><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17" style="height:75px;width:75px;border-radius: 3px;float:left;margin-bottom:10px;margin-top:-10px;"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/" data-id="cj9osouk80000j6z7i5udwn3i" class="article-share-link">Share</a>
+      <a data-url="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/" data-id="cj9osuyh30000vaz7m7ac5hkj" class="article-share-link">Share</a>
       
         <a href="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -167,12 +168,13 @@
 <p>The UI is intuitive and straightforwardly presented.<br>More info: <a href="http://jaredly.github.io/hexo-admin/" target="_blank" rel="external">Administration</a></p>
 <h3 id="Password-protection"><a href="#Password-protection" class="headerlink" title="Password protection"></a>Password protection</h3><p>If you’re using Hexo admin on your live server, you want some password protection. To enable this, you just add a few config variables to your hexo <span style="color:#2F327B"><em>_config.yml</em></span> file:</p>
 <p><span style="color:#2F327B"> admin:</span></p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">username: myfavoritename</div><div class="line"></div><div class="line">password_hash: be121740bf988b2225a313fa1f107ca1</div><div class="line"></div><div class="line">secret: a secret something</div></pre></td></tr></table></figure>
-<h3 id="Blog-away"><a href="#Blog-away" class="headerlink" title="Blog away!"></a>Blog away!</h3>
+  <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">username:</span> <span class="string">myfavoritename</span></div><div class="line"></div><div class="line"><span class="attr">password_hash:</span> <span class="string">be121740bf988b2225a313fa1f107ca1</span></div><div class="line"></div><div class="line"><span class="attr">secret:</span> <span class="string">a</span> <span class="string">secret</span> <span class="string">something</span></div></pre></td></tr></table></figure>
+<h3 id="Blog-away"><a href="#Blog-away" class="headerlink" title="Blog away!"></a>Blog away!</h3><h6 id="By-Phil-Neiman"><a href="#By-Phil-Neiman" class="headerlink" title="By: Phil Neiman"></a><span style="color:black;">By: <em>Phil Neiman</em></span></h6><p><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17" style="height:75px;width:75px;border-radius: 3px;float:left;margin-bottom:10px;margin-top:-10px;"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pneiman1.github.io/2017/11/02/hello-world/" data-id="cj9osoukh0001j6z747lttqsm" class="article-share-link">Share</a>
+      <a data-url="http://pneiman1.github.io/2017/11/02/hello-world/" data-id="cj9osuyhc0001vaz7zz3anccl" class="article-share-link">Share</a>
       
         <a href="http://pneiman1.github.io/2017/11/02/hello-world/#disqus_thread" class="article-comment-link">Comments</a>
       
