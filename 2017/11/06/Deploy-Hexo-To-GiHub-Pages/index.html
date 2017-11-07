@@ -14,7 +14,7 @@
 <meta property="og:description" content="Hi folks! In my last blog post, we covered installing the Hexo blog engine via Command Line Interface (CLI), running the Hexo server, creating a new blog post, and generating the static files needed t">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17">
-<meta property="og:updated_time" content="2017-11-07T08:06:28.000Z">
+<meta property="og:updated_time" content="2017-11-07T20:28:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Deploy Hexo To GitHub Pages">
 <meta name="twitter:description" content="Hi folks! In my last blog post, we covered installing the Hexo blog engine via Command Line Interface (CLI), running the Hexo server, creating a new blog post, and generating the static files needed t">
@@ -105,7 +105,7 @@
 <h3 id="Set-information-to-use-Git"><a href="#Set-information-to-use-Git" class="headerlink" title="Set information to use Git"></a>Set information to use Git</h3><p><a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">https://github.com/hexojs/hexo-deployer-git</a></p>
 <p>Open the command line and execute the following commands.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ vi _config.yml</div></pre></td></tr></table></figure>
-<p>Now we’re back in the <em>main</em> _config.yml file, so add the following to your deployment yml markup: </p>
+<p>Now we’re back in the <em>main</em> <span style="color: navy;">_config.yml</span> file, so add the following to your deployment yml markup: </p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="string">~~~~~~~~~~~~~~~~~~</span> <span class="string">_config.yml</span> <span class="string">~~~~~~~~~~~~~~~~~~</span></div><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:gitusername/gitusername.github.io.git</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
 <p>Just like the prior replacement step, where we replaced <span style="color:orange;">gitusername</span> with your GitHub account’s username, do that again for <span style="color:maroon;">repo: </span><span style="color:navy">git@github.com:gitusername/gitusername.github.io.git</span>, substituting in your GitHub account’s username for <span style="color:orange;">gitusername</span>. Sweet!</p>
 <p>Are we there yet? <span style="color:maroon;"><em>We are kids, we are.</em></span></p>
@@ -118,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/" data-id="cj9pcjmyx000100z721h0tozk" class="article-share-link">Share</a>
+      <a data-url="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/" data-id="cj9q2irsk00003uz7nxm3nsi3" class="article-share-link">Share</a>
       
         <a href="http://pneiman1.github.io/2017/11/06/Deploy-Hexo-To-GiHub-Pages/#disqus_thread" class="article-comment-link">Comments</a>
       
