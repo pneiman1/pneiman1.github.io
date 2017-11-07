@@ -131,6 +131,7 @@ body {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 20px;
+  color: slate;
 }
 .outer:before,
 .outer:after {
