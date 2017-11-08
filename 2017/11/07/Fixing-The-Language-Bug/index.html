@@ -3,16 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Fixing The Language Bug | Phil Neiman&#39;s Blog</title>
+  <title>Fixing The Language Bug (Quickly!) | Phil Neiman&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Fixing The Language Bug">
+  <meta name="description" content="Perhaps you have noticed by now, if you have run the Hexo server multiple times, the categories, tags, titles, etc., of your site fluctuate between languages, e.g., one second they’re French, the next">
+<meta name="keywords" content="hotfix">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fixing The Language Bug (Quickly!)">
 <meta property="og:url" content="http://pneiman1.github.io/2017/11/07/Fixing-The-Language-Bug/index.html">
 <meta property="og:site_name" content="Phil Neiman&#39;s Blog">
+<meta property="og:description" content="Perhaps you have noticed by now, if you have run the Hexo server multiple times, the categories, tags, titles, etc., of your site fluctuate between languages, e.g., one second they’re French, the next">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-11-07T23:15:20.000Z">
+<meta property="og:image" content="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17">
+<meta property="og:updated_time" content="2017-11-08T08:58:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fixing The Language Bug">
+<meta name="twitter:title" content="Fixing The Language Bug (Quickly!)">
+<meta name="twitter:description" content="Perhaps you have noticed by now, if you have run the Hexo server multiple times, the categories, tags, titles, etc., of your site fluctuate between languages, e.g., one second they’re French, the next">
+<meta name="twitter:image" content="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17">
   
     <link rel="alternate" href="/atom.xml" title="Phil Neiman&#39;s Blog" type="application/atom+xml">
   
@@ -69,6 +75,10 @@
   <time datetime="2017-11-07T23:15:20.000Z" itemprop="datePublished">2017-11-07</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/yaml/">yaml</a>►<a class="article-category-link" href="/categories/yaml/bug-fixing/">bug-fixing</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -77,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Fixing The Language Bug
+      Fixing The Language Bug (Quickly!)
     </h1>
   
 
@@ -85,15 +95,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>Perhaps you have noticed by now, if you have run the Hexo server multiple times, the categories, tags, titles, etc., of your site fluctuate between languages, e.g., one second they’re French, the next they’re German. This is an internationalization bug, wherein a failure to revert to the default occurs repeatedly. This is a known bug in the Landscape theme as well as the Light theme. The <span style="color:orange;">fix</span> here is to set the language to <span style="color:orange;">‘default’</span> explicitly in your configuration file.</p>
+<p>So, inside your <em>main</em> <span style="color:navy"> <em>_config.yml</em></span> file, simply replicate the following:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="string">~~~~~~~~~~~~~~~~~~</span> <span class="string">_config.yml</span> <span class="string">~~~~~~~~~~~~~~~~~~</span></div><div class="line"><span class="comment">### Hexo Configuration</span></div><div class="line"><span class="comment">##### Docs: https://hexo.io/docs/configuration.html</span></div><div class="line"><span class="comment">###### Source: https://github.com/hexojs/hexo/</span></div><div class="line"></div><div class="line"><span class="comment">#### Site</span></div><div class="line"></div><div class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Blog</span></div><div class="line"><span class="attr">subtitle:</span> </div><div class="line"><span class="attr">description:</span></div><div class="line"><span class="attr">author:</span> <span class="string">Me</span></div><div class="line"><span class="attr">language:</span> <span class="string">default</span></div><div class="line"><span class="attr">timezone:</span></div></pre></td></tr></table></figure>
+<p>This should eliminate the bug! </p>
+<p>Follow then DM me on <a href="https:twitter.com/pneiman1" target="_blank" rel="external">Twitter</a> if you have questions! Or better yet, comment! Best == share (!)</p>
+<h6 id="By-Phil-Neiman"><a href="#By-Phil-Neiman" class="headerlink" title="By: Phil Neiman"></a>By:<span style="color:black;"> Phil Neiman</span></h6><p><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/166420_973911920643_4817278_n.jpg?oh=a5cebac5e141e5148e4909788cf4e727&oe=5AA91A17" style="height:75px;width:75px;border-radius: 3px;float:left;margin-bottom:10px;margin-top:-10px;"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://pneiman1.github.io/2017/11/07/Fixing-The-Language-Bug/" data-id="cj9qsc2b40001lpz7njmls4e3" class="article-share-link">Share</a>
+      <a data-url="http://pneiman1.github.io/2017/11/07/Fixing-The-Language-Bug/" data-id="cj9qsm1vv000183z7vce8t5i5" class="article-share-link">Share</a>
       
         <a href="http://pneiman1.github.io/2017/11/07/Fixing-The-Language-Bug/#disqus_thread" class="article-comment-link">Comments</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hotfix/">hotfix</a></li></ul>
+
     </footer>
   </div>
   
@@ -125,7 +143,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/">open source software</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/web-development/">web development</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/web-development/javascript/">javascript</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/production/">production</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/">deployment</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/yaml/">yaml</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/yaml/configuration/">configuration</a></li></ul></li></ul></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/">open source software</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/web-development/">web development</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/open-source-software/web-development/javascript/">javascript</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/production/">production</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/">deployment</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/yaml/">yaml</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/production/deployment/yaml/configuration/">configuration</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/yaml/">yaml</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/yaml/bug-fixing/">bug-fixing</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -135,7 +153,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog-engines/">blog engines</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog-engines/">blog engines</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hotfix/">hotfix</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li></ul>
     </div>
   </div>
 
@@ -145,7 +163,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/blog-engines/" style="font-size: 10px;">blog engines</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a>
+      <a href="/tags/blog-engines/" style="font-size: 10px;">blog engines</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hotfix/" style="font-size: 10px;">hotfix</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a>
     </div>
   </div>
 
@@ -167,7 +185,7 @@
       <ul>
         
           <li>
-            <a href="/2017/11/07/Fixing-The-Language-Bug/">Fixing The Language Bug</a>
+            <a href="/2017/11/07/Fixing-The-Language-Bug/">Fixing The Language Bug (Quickly!)</a>
           </li>
         
           <li>
